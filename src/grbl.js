@@ -78,6 +78,8 @@ Grbl.prototype.init = function () {
   this.dev.on('data', function (data) {
     this.interpret(data);
   }.bind(this));
+
+  return this;
 };
 
 /**
